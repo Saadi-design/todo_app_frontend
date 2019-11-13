@@ -1,11 +1,14 @@
 {
+  "homepage": "https://saadi-design.github.io/todo_app_frontend",
   "name": "todo_app_frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "uuid": "^3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
