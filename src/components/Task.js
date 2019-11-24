@@ -1,65 +1,48 @@
-import React from "react";
-class AddTask extends React.Component {
- state = {
-   taskDescription: ""
- }
- addTask = () => {
-   const task = {
-       id: 1,
-       taskDescription: this.state.taskDescription,
-       completed: false
-   }
-   this.props.newTask(task);
-   this.setState({taskDescription: ""});
- }
- taskDescriptionChanged = (event) => {
-   let taskDescription = this.state.taskDescription;
-   taskDescription = event.target.value;
-   this.setState({taskDescription});
- }
- render() {
-   return (
-     <div className="row">
-       <div className="col-12 col-md-10">
-         <input
-           className="form-control"
-           type="text"
-           placeholder="What do you want to do..."
-           value={this.state.taskDescription}
-           onChange={this.taskDescriptionChanged}
-         />
-       </div>
-       <div className="col-12 col-md-2">
-         <button type="button" className="btn btn-success" onClick={this.addTask}>
-           CREATE
-         </button>
-       </div>
-     </div>
-   );
- }
-}
-export default AddTask;
 import React from 'react';
+//import AddTask from 'react';
+//const uuidv4 = require('uuid/v4');
 class Task extends React.Component {
- render(){
-     return(
-       <li>
-       <div className="row taskrow">
-        <div className="col-4 col-md-2">
-         <input type="checkbox" aria-label="Checkbox for following text input"></input>
-   </div>
-          <div className="col-12 col-md-6">
-           {this.props.task.taskDescriptio}
-   </div>
-          <div className="col-4 col-md-2">
-          <button type="button" class="btn btn-primary">Done</button>
-   </div>
-         <div className="col-4 col-md-2">
-         <button type="button" class="btn btn-warning">Edit</button>
-     </div>
-  </div>
-  </li>
- );
-}
+
+    deleteTask = () => {
+        this.props.deleteTaskFunc(this.props.task.id);
+    }
+    completedTask = () => {
+        this.props.completedTask(this.props.task.id)
+    }
+    render() {
+        const completed = this.props.task.completed;
+        return (
+            <div className="row taskrow">
+                {completed &&
+
+                    <div className="col-12 col-md-6 completedTasks">
+
+                        {this.props.task.taskDescription}
+                    </div>
+                }
+
+                {!completed &&
+                    <div className="col-12 col-md-6">
+                        {this.props.task.taskDescription}
+                    </div>
+                }
+                <div className="col-6 col-md-3">
+
+                    <button type="button" className="btn btn-primary" onClick={this.addTask}>
+                        Done
+                            </button>
+                </div>
+                <div>
+                    <div className="col-6 col-md-3">
+
+                        <button type="button" className="btn btn-danger" onClick={this.deleteTask}>
+                            Delete
+                    </button>
+                    </div>
+                </div>
+            </div>
+
+        );
+    }
 }
 export default Task;

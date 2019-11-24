@@ -1,46 +1,53 @@
 import React from 'react';
 import './App.css';
-import uuid from "uuid/v4";
 import Header from './components/Header';
-import AddTask from './components/AddTask';
-import TaskList from './components/TaskList';
-import Footer from './components/Footer';
 import TaskCounter from './components/TaskCounter';
-import Task from './components/Task.js';
-// function App() {
-//   return (
-//     <div className = "container" >
-//     < Header />
-//      <TaskList listAdded = "ADD NEW TASK HERE "/>
-//       <AddTask taskDescription = "remaining task"/>
-//        <Task taskDescription = "Iman's PTA @ 6pm" />
-//        <Task taskDescription = "make orthodontist appointment for Arryan" />
-//        <Task taskDescription = "book theory test for Areesh" />
-//        <Task taskDescription = "take windows measurement to order curtain " />
-//        <Task taskDescription = "pick up prescription from GP" />
-//         <Footer  addButton = "add button "/>
-//    </div>
-//   );
-// }
+import TaskList from './components/TaskList';
+import AddTask from './components/AddTask';
+const uuidv4 = require('uuid/v4');
+
+
 class App extends React.Component {
-state = {
- tasks:[]
-}
- addTaskToList = (task) => {
-   let tasks = this.state.tasks;
-     tasks.push(task);
-     this.setState({tasks});
- }
- render() {
-   return (
-     <div className="container">
-       <Header />
-       <AddTask newTask={this.addTaskToList} />
-       <TaskCounter count={this.state.tasks.length} />
-       <TaskList tasks={this.state.tasks} />
-       <Footer />
-     </div>
-   );
- }
+  constructor(props) {
+    super(props);
+    this.state = {
+      tasks: [
+        { id: uuidv4(), taskDescription: "Order inhalers", completed: false },
+        { id: uuidv4(), taskDescription: "Complete shopping", completed: true },
+        { id: uuidv4(), taskDescription: "Book flights", completed: false },
+        { id: uuidv4(), taskDescription: "Complete CV", completed: true },
+        { id: uuidv4(), taskDescription: "Pay the credit card", completed: false },
+        { id: uuidv4(), taskDescription: "change energy suppliers", completed: false }
+      ]
+    };
+  }
+  addTaskToList = (task) => {
+    let tasks = this.state.tasks;
+    tasks.push(task);
+    this.setState({ tasks: tasks });
+  }
+  deleteTask = (taskId) => {
+
+    let tasks = this.state.tasks;
+
+    let filteredTasks = tasks.filter(function (task) {
+      return task.id !== taskId;
+      
+    });
+    this.setState({ tasks: filteredTasks });
+
+  }
+  render() {
+    return (
+      <div className="container">
+        <Header />
+        <AddTask newTask={this.addTaskToList} />
+        <TaskCounter count={this.state.tasks.length} />
+        <TaskList tasks={this.state.tasks} deleteTaskFunc={this.deleteTask} id={this.Id} />
+ </div>
+
+    );
+  }
 }
 export default App;
+
