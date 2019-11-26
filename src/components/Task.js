@@ -1,5 +1,5 @@
 import React from 'react';
-//import AddTask from 'react';
+// import AddTask from 'react';
 //const uuidv4 = require('uuid/v4');
 class Task extends React.Component {
 
@@ -9,10 +9,11 @@ class Task extends React.Component {
     completedTask = () => {
         this.props.completedTask(this.props.task.id)
     }
+
     render() {
         const completed = this.props.task.completed;
         return (
-            <div className="row taskrow">
+            <div className="row taskRow">
                 {completed &&
 
                     <div className="col-12 col-md-6 completedTasks">
@@ -28,14 +29,14 @@ class Task extends React.Component {
                 }
                 <div className="col-6 col-md-3">
 
-                    <button type="button" className="btn btn-primary" onClick={this.addTask}>
+                    <button type="button" className="btn btn-primary btn-sm" onClick={this.addTask}>
                         Done
                             </button>
                 </div>
                 <div>
                     <div className="col-6 col-md-3">
 
-                        <button type="button" className="btn btn-danger" onClick={this.deleteTask}>
+                        <button type="button" className="btn btn-danger btn-sm" onClick={this.deleteTask}>
                             Delete
                     </button>
                     </div>

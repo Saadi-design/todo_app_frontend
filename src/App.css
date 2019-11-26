@@ -1,18 +1,11 @@
-body{
-  background-color: #e254a2;
-}
 .App{
-  background-color: #582e4a;
+  background-color: #383155;
   min-height:500px;
   width: 400px;
   margin: 40px auto;
+  text-align: left;
+  padding: 20px;
 }
-
-
-
-/* .App {
-  text-align: center;
-} */
 
 .App-logo {
   height: 40vmin;
@@ -38,10 +31,10 @@ body{
   padding-bottom: 10px;
   border-top: 2px solid grey;
 }
-.completedTask {
+#completedTask {
   text-decoration: line-through;
 }
 .button{
   font-style:small;
-  size: 10px;
+  size: 5px;
 }

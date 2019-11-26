@@ -39,11 +39,12 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div className="container">
-        <Header />
+      <div className="App">
+        <header>
         <AddTask newTask={this.addTaskToList} />
         <TaskCounter count={this.state.tasks.length} />
         <TaskList tasks={this.state.tasks} deleteTaskFunc={this.deleteTask} id={this.Id} />
+        </header>
  </div>
 
     );

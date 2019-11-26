@@ -27,14 +27,14 @@ class AddTask extends React.Component {
             className="form-control"
             type="text"
             id="addTask"
-            placeholder="What do you want to do..."
+            placeholder="Things to do..."
             value={this.state.taskDescription}
             onChange={this.taskDescriptionChanged}
           />
         </div>
         <div className="col-12 col-md-2">
-          <button type="button" className="btn btn-success" onClick={this.addTask}>
-            Add
+          <button type="button" className="btn btn-success btn-md" onClick={this.addTask}>
+            +
          </button>
         </div>
       </div>
