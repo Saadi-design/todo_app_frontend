@@ -16,27 +16,27 @@ code {
   margin: 0;
  }@media only screen and (max-width: 1400px) {
      body {
-       background-color: lightblue;
-       color:blue
+       background-color: #e254a2;
+       color: whitesmoke
      }
      @media only screen and (max-width: 1200px) {
        body {
-         background-color:lightskyblue;
-         color:black
+         background-color:  #e254a2;
+         color: whitesmoke
        }
      }
      
     @media only screen and (max-width: 800px) {
        body {
-         background-color:rgb(159, 214, 233);
-         color:blue
+         background-color:  #8d61f3;
+         color: whitesmoke
        }
      }
      
      @media only screen and (max-width: 600px) {
        body {
-         background-color: lightblue;
-         color:blue
+         background-color: #8d61f3;
+         color: whitesmoke
        }
      }
  
