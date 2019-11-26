@@ -1,6 +1,18 @@
-.App {
-  text-align: center;
+body{
+  background-color: #e254a2;
 }
+.App{
+  background-color: #582e4a;
+  min-height:500px;
+  width: 400px;
+  margin: 40px auto;
+}
+
+
+
+/* .App {
+  text-align: center;
+} */
 
 .App-logo {
   height: 40vmin;
