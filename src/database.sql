@@ -15,6 +15,15 @@ INSERT INTO user (userId,name,surname) VALUE ("1","Saadiya","Moid");
 
 INSERT INTO user (userId,name,surname) VALUE ("2","Abdul","Moid");
 
+SELECT * FROM user;
++--------+---------+---------+
+| userId | name    | surname |
++--------+---------+---------+
+|      1 | Saadiya | Moid    |
+|      2 | Abdul   | Moid    |
++--------+---------+---------+
+
+
 CREATE TABLE task (id VARCHAR(50), taskDescription VARCHAR(100), completed VARCHAR(20), creationDate DATE, userId BIGINT(20), PRIMARY KEY (id));
 
 ALTER TABLE task ADD FOREIGN KEY (userId) REFERENCES user(userId);
