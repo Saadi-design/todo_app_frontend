@@ -6,26 +6,26 @@ body {
   margin: 0;
  }@media only screen and (max-width: 1400px) {
      body {
-       background-color: rgb(110, 187, 22);
+       background-color: rgb(172, 226, 111);
        color: whitesmoke
      }
      @media only screen and (max-width: 1200px) {
        body {
-         background-color:  #5462e2;
+         background-color:  #878dbe;
          color: whitesmoke
        }
      }
      
     @media only screen and (max-width: 800px) {
        body {
-         background-color:  pink;
+         background-color:  rgb(180, 94, 109);
          color: whitesmoke
        }
      }
      
      @media only screen and (max-width: 400px) {
        body {
-         background-color: #8d61f3;
+         background-color: #2d2147;
          color: whitesmoke
        }
      }

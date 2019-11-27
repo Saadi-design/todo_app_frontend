@@ -37,7 +37,7 @@ class Task extends React.Component {
                     <div className="col-6 col-md-3">
 
                         <button type="button" className="btn btn-danger btn-sm" onClick={this.deleteTask}>
-                            Delete
+                        <i class="fas fa-backspace"></i>
                     </button>
                     </div>
                 </div>

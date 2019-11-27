@@ -26,9 +26,20 @@ class App extends React.Component {
     tasks.push(task);
     this.setState({ tasks: tasks });
   }
+  
+  
+  doneTask = (taskId) => {
+    let tasks =this.state.task;
+    tasks.map(task)
+        if (task.id === id) {
+          task.done = true;
+        }
+      }
+
   deleteTask = (taskId) => {
 
     let tasks = this.state.tasks;
+    
 
     let filteredTasks = tasks.filter(function (task) {
       return task.id !== taskId;
