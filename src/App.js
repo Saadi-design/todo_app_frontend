@@ -48,8 +48,6 @@ class App extends React.Component {
     return (
       <div className=" App">
         <hr />
-        <Image source={require('./image//home/saadiya/Documents/tech returner/todo_app_frontend/src/images/424311.jpg')} style={styles.backgroundImage} />
-        <hr />
         <Header />
         <hr />
         <AddTask newTask={this.addTaskToList} />

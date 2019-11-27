@@ -9,12 +9,12 @@ class Task extends React.Component {
     }
 
     render() {
-        const completed = this.props.task.completed;
+        const completed = this.props.task.completed
         return (
             <div className="row taskRow">
                 {completed &&
 
-                    <div className="col-12 col-md-6 completedTasks">
+                    <div className="col-12 col-md-6 completedTask">
 
                         {this.props.task.taskDescription}
                     </div>
