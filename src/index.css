@@ -62,4 +62,9 @@ body {
    padding-bottom: 10px;
    border-top: 2px solid grey;
  }
+
+ .custom-color {
+  background-color: burlywood;
+  color: black;
+}
  

@@ -32,7 +32,7 @@ class AddTask extends React.Component {
             onChange={this.taskDescriptionChanged}
           />
         </div>
-        <div className="button col-12 col-md-2">
+        <div className="button col-12 col-md-2 custom-color">
           <button type="button" className="btn btn-success btn-md " onClick={this.addTask}>
             +
          </button>

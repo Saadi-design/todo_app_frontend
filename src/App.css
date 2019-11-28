@@ -1,5 +1,5 @@
 .App{
-  background-color: #51467a;
+  background-color: #2e2552;
   min-height:600px;
   width: 400px;
   margin: 40px auto;
@@ -17,6 +17,7 @@
           /* The third layer shadow */
       0 20px 1px -9px rgba(0,0,0,0.15);
   }
+  
 
 .App-logo {
   height: 40vmin;
@@ -46,3 +47,4 @@
 .completedTask {
   text-decoration: line-through;
 }
+
