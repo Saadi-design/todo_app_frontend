@@ -24,7 +24,7 @@ class AddTask extends React.Component {
       <div className="row">
         <div className="col-12 col-md-10">
           <input
-            className="form-control"
+            className="form-control navbar"
             type="text"
             id="addTask"
             placeholder="Things to do..."

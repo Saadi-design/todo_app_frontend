@@ -1,5 +1,5 @@
 body {
-  /* background-color: rgba(109, 105, 131, 0.945); */
+  background-color: rgba(109, 105, 131, 0.945);
   color: whitesmoke;
 }
 
@@ -44,12 +44,12 @@ body {
      monospace;
  }
  .navbar {
-   height: 100px;
+   height: 40px;
  
-   background-color: rgb(50, 182, 169);
+   background-color: rgb(1, 146, 146);
    margin-bottom: 15px;
-   text-align: center;
-   font-size: 70px;
+   text-align: left;
+   font-size: 16px;
    display:flex;
    justify-content: center;
    align-items: center;
@@ -63,6 +63,3 @@ body {
    border-top: 2px solid grey;
  }
  
- .completedTask {
-  text-decoration: line-through;
-}
