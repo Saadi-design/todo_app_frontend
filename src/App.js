@@ -4,7 +4,7 @@ import Header from './components/Header';
 import TaskCounter from './components/TaskCounter';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
-import paisley from './paisley.jpg';
+import paisley from './components/paisley.jpg';
 const uuidv4 = require('uuid/v4');
 
 
