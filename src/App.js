@@ -4,6 +4,7 @@ import Header from './components/Header';
 import TaskCounter from './components/TaskCounter';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
+import paisley from './paisley.jpg';
 const uuidv4 = require('uuid/v4');
 
 
@@ -48,6 +49,7 @@ class App extends React.Component {
     return (
       <div className=" App">
         <hr />
+        <img src={paisley} alt="background"/>
         <Header />
         <hr />
         <AddTask newTask={this.addTaskToList} />
