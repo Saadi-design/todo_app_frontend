@@ -1,24 +1,16 @@
 .App{
-  background-color: #553c72;
+  background-color: #4a3a5c;
   opacity: 0.9;
   min-height:600px;
   width: 500px;
   margin: 40px auto;
   text-align: left;
   padding: 20px;
-  box-shadow:
-  /* The top layer shadow */
-      0 1px 1px rgba(0,0,0,0.15),
-          /* The second layer */
-      0 10px 0 -5px #eee,
-          /* The second layer shadow */
-      0 10px 1px -4px rgba(0,0,0,0.15),
-          /* The third layer */
-      0 20px 0 -10px #eee,
-          /* The third layer shadow */
-      0 20px 1px -9px rgba(0,0,0,0.15);
- } 
-
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+      
 .App-logo {
   height: 40vmin;
 }
@@ -31,3 +23,13 @@
   text-decoration: line-through;
 }
 
+/* 0 1px 1px rgba(0,0,0,0.15),
+         
+      0 10px 0 -5px #eee,
+       
+      0 10px 1px -4px rgba(0,0,0,0.15),
+          
+      0 20px 0 -10px #eee,
+        
+      0 20px 1px -9px rgba(0,0,0,0.15);
+ }  */
