@@ -48,7 +48,7 @@ class App extends React.Component {
     return (
 
 
-      <div className=" App">
+      <div className=" App App color">
         <hr />
         <Header />
         <hr />

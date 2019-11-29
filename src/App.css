@@ -16,14 +16,14 @@
       0 20px 0 -10px #eee,
           /* The third layer shadow */
       0 20px 1px -9px rgba(0,0,0,0.15);
-  }
   
+  }
 
 .App-logo {
   height: 40vmin;
 }
 
-.App-header {
+/* .App-header {
   background-color: #45377a;
   min-height: 100vh;
   display: flex;
@@ -33,7 +33,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   border-block-color: black;
-}
+} */
 
 .App-link {
   color: #09d3ac;

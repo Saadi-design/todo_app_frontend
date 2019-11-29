@@ -1,4 +1,6 @@
 body {
+  background-image: url("./components/media/stunning-purple-backgrounds.jpg");
+  background-size: cover;
     color: whitesmoke
 }
 
@@ -6,26 +8,31 @@ body {
   margin: 0;
  }@media only screen and (max-width: 1400px) {
      body {
-       background-color: rgb(111, 226, 145);
+      background-image: url("./components/media/stunning-purple-backgrounds.jpg");
+      background-size: cover;
        color: whitesmoke
      }
      @media only screen and (max-width: 1200px) {
        body {
-         background-color:  #878dbe;
+        background-image: url("./components/media/purpleLights.jpg");
+        background-size: cover;
          color: whitesmoke
        }
      }
      
     @media only screen and (max-width: 800px) {
        body {
-        background-image: url("./components/media/.jpg"); 
+        background-image: url("./components/media/purpleflowers.jpg"); 
+        background-size: cover;
          color: whitesmoke
+         
        }
      }
      
      @media only screen and (max-width: 400px) {
        body {
-         background-color: #2d2147;
+         background-image: url("./components/media/galaxy.jpg");
+         background-size: cover;
          color: whitesmoke
        }
      }
