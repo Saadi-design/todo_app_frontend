@@ -4,23 +4,23 @@ import Header from './components/Header';
 import TaskCounter from './components/TaskCounter';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
+import Footer from './components/Footer';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faTrashAlt, faPlusSquare, faCheckSquare, faEdit, faWalking, faShoePrints } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt, faPlusSquare, faCheckSquare, faComments, faPenFancy, faShoePrints } from '@fortawesome/free-solid-svg-icons';
 
 
-library.add 
-(
-  faTrashAlt,
-  faPlusSquare,
-  faCheckSquare,
-  faEdit,
-  faWalking,
-  faShoePrints
-  
+library.add
+  (
+    faTrashAlt,
+    faPlusSquare,
+    faCheckSquare,
+    faPenFancy,
+    faShoePrints,
+    faComments
   );
 
 
-  const uuidv4 = require('uuid/v4');
+const uuidv4 = require('uuid/v4');
 
 
 class App extends React.Component {
@@ -58,21 +58,52 @@ class App extends React.Component {
     });
     this.setState({ tasks: completeTask })
   }
+  editTask = (id, newTaskDescription) => {
+    console.log(id, newTaskDescription);
+    if (newTaskDescription === "") {
+
+      return;
+    }
+    const tasksCopy = this.state.tasks.slice();
+    tasksCopy.forEach(task => {
+      if (task.id === id) {
+        task.taskDescription = newTaskDescription
+      }
+
+    });
+    console.log(tasksCopy);
+    this.setState({
+      tasks: tasksCopy
+    });
+
+  }
+  markTaskAsActive = (taskId) => {
+    const activeTasks = this.state.tasks.map(function (task) {
+      if (task.id === taskId) {
+        task.completed = false
+      }
+      return task
+    });
+    this.setState({
+      tasks: activeTasks
+    })
+  }
 
 
   render() {
     return (
-
-
-      <div className=" App App color">
+      <div className=" App">
         <hr />
         <Header />
         <hr />
+
         <AddTask newTask={this.addTaskToList} />
         <hr />
         <TaskCounter count={this.state.tasks.length} />
         <hr />
-        <TaskList tasks={this.state.tasks} completeTaskFunc={this.completeTask} deleteTaskFunc={this.deleteTask} />
+        <TaskList tasks={this.state.tasks} completeTaskFunc={this.completeTask} deleteTaskFunc={this.deleteTask} editTaskFunc={this.editTask} />
+        <hr />
+        <Footer />
       </div>
     );
   }

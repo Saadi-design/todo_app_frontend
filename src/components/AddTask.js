@@ -35,7 +35,7 @@ class AddTask extends React.Component {
           />
         </div>
         <div className="button col-12 col-md-2">
-          <button type="button" className="btn btn-success btn-md " onClick={this.addTask}><FontAwesomeIcon icon={faPlusSquare}/>
+          <button type="button" className="btn btn-warning btn btn-md " onType onClick={this.addTask}><FontAwesomeIcon icon={faPlusSquare}/>
          </button>
         </div>
       </div>

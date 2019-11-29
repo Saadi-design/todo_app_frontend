@@ -5,8 +5,8 @@ class Header extends React.Component {
 
     render() {
         return (
-            <h1>
-                <header> Miles to go.<FontAwesomeIcon icon={faShoePrints}/></header>
+            <h1 className= 'h1'>
+                <header> Miles to go    <FontAwesomeIcon icon={faShoePrints}/></header>
                 
             </h1>
 

@@ -1,7 +1,9 @@
 body {
+  margin: 0;
   background-image: url("./components/media/stunning-purple-backgrounds.jpg");
   background-size: cover;
-    color: whitesmoke
+  color: rgb(250, 219, 229);
+  font-family: curasive;
 }
 
   @media only screen and (max-width: 1400px) {
@@ -35,18 +37,17 @@ body {
          color: whitesmoke
        }
      }
-    
- .code {
+
+ /* .code {
    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-     monospace;
- }
+     monospace; */
+ 
  .navbar {
    height: 40px;
- 
-   background-color: rgb(1, 146, 146);
+    background-color: rgb(1, 146, 146);
    margin-bottom: 15px;
    text-align: left;
-   font-size: 16px;
+   font-size: 18px;
    display:flex;
    justify-content: center;
    align-items: center;
@@ -59,4 +60,18 @@ body {
    padding-bottom: 10px;
    border-top: 2px solid grey;
  }
- 
+ h1 {
+   font-size: 40px;
+   font-style: bold;
+   font-weight: 400px;
+   text-align: center;
+ }
+
+ h5 {
+  font-size: 16px;
+
+ }
+ h6 {
+   font-style: italic;
+   text-align: right;
+ }
