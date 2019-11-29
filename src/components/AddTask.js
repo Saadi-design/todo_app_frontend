@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faPlusSquare } from "@fortawesome/free-solid-svg-icons";
 const uuidv4 = require('uuid/v4')
 class AddTask extends React.Component {
   state = {
@@ -33,8 +35,7 @@ class AddTask extends React.Component {
           />
         </div>
         <div className="button col-12 col-md-2">
-          <button type="button" className="btn btn-success btn-md " onClick={this.addTask}>
-            +
+          <button type="button" className="btn btn-success btn-md " onClick={this.addTask}><FontAwesomeIcon icon={faPlusSquare}/>
          </button>
         </div>
       </div>

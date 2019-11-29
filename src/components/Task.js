@@ -1,4 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import { faEdit } from '@fortawesome/free-solid-svg-icons';
 class Task extends React.Component {
 
     deleteTask = () => {
@@ -7,7 +11,10 @@ class Task extends React.Component {
     completeTask = () => {
         this.props.completeTaskFunc(this.props.task.id)
     }
-
+    editTask = () => {
+        var newTaskDescription = prompt('Update task', this.props.task.taskDescription);
+        this.props.editTaskFunc(this.props.task.id, newTaskDescription)
+    }
     render() {
         const completed = this.props.task.completed
         return (
@@ -26,18 +33,20 @@ class Task extends React.Component {
                     </div>
                 }
                 <div className="col-6 col-md-3">
-
-                    <button type="button" className="btn btn-primary btn-sm" onClick={this.completeTask}>
-                        Done
+                
+                    <button type="button" className="btn btn-secondary btn-xs" onClick={this.completeTask}>
+                    <FontAwesomeIcon icon={faCheckSquare}/>
                     </button>
                 </div>
-                <div>
                     <div className="col-6 col-md-3">
-
-                        <button type="button" className="btn btn-danger btn-sm" onClick={this.deleteTask}>
-                            Delete
+                    <button type="button" class="btn btn-danger btn-xs" onClick={this.deleteTask}>
+                        <FontAwesomeIcon icon={faTrashAlt}/>
                     </button>
                     </div>
+                    <div className="col-4 col-md-2 col-lg-2">
+                    <button type="button" className="btn btn-primary btn btn-xs" onClick={this.editTask}>
+                    <FontAwesomeIcon icon={faEdit}/>   
+                 </button>
                 </div>
             </div>
 

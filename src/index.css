@@ -4,14 +4,13 @@ body {
     color: whitesmoke
 }
 
-.body {
-  margin: 0;
- }@media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1400px) {
      body {
       background-image: url("./components/media/stunning-purple-backgrounds.jpg");
       background-size: cover;
        color: whitesmoke
      }
+    }
      @media only screen and (max-width: 1200px) {
        body {
         background-image: url("./components/media/purpleLights.jpg");
@@ -19,7 +18,7 @@ body {
          color: whitesmoke
        }
      }
-     
+    
     @media only screen and (max-width: 800px) {
        body {
         background-image: url("./components/media/purpleflowers.jpg"); 
@@ -36,15 +35,7 @@ body {
          color: whitesmoke
        }
      }
-      /* background-image: url("./components/paisley.jpg");  */
- 
-   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-     sans-serif;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale; */
- }
- 
+    
  .code {
    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
      monospace;

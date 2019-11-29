@@ -1,5 +1,6 @@
 .App{
-  background-color: #2e2552;
+  background-color: #553c72;
+  opacity: 0.9;
   min-height:600px;
   width: 400px;
   margin: 40px auto;
@@ -16,8 +17,7 @@
       0 20px 0 -10px #eee,
           /* The third layer shadow */
       0 20px 1px -9px rgba(0,0,0,0.15);
-  
-  }
+ } 
 
 .App-logo {
   height: 40vmin;

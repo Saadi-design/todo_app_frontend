@@ -4,7 +4,23 @@ import Header from './components/Header';
 import TaskCounter from './components/TaskCounter';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
-const uuidv4 = require('uuid/v4');
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faTrashAlt, faPlusSquare, faCheckSquare, faEdit, faWalking, faShoePrints } from '@fortawesome/free-solid-svg-icons';
+
+
+library.add 
+(
+  faTrashAlt,
+  faPlusSquare,
+  faCheckSquare,
+  faEdit,
+  faWalking,
+  faShoePrints
+  
+  );
+
+
+  const uuidv4 = require('uuid/v4');
 
 
 class App extends React.Component {
