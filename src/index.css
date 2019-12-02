@@ -15,7 +15,7 @@ body {
     }
      @media only screen and (max-width: 1200px) {
        body {
-        background-image: url("./components/media/purpleLights.jpg");
+        background-image: url("./components/media/purpleflowers.jpg");
         background-size: cover;
          color: whitesmoke
        }
@@ -23,7 +23,7 @@ body {
     
     @media only screen and (max-width: 800px) {
        body {
-        background-image: url("./components/media/purpleflowers.jpg"); 
+        background-image: url("./components/media/purpleLights.jpg"); 
         background-size: cover;
          color: whitesmoke
          
