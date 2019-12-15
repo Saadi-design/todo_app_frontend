@@ -2,14 +2,16 @@ body {
   margin: 0;
   background-image: url("./components/media/stunning-purple-backgrounds.jpg");
   background-size: cover;
+  object-fit: fill;
   color: rgb(250, 219, 229);
   font-family: curasive;
 }
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1600px) {
      body {
       background-image: url("./components/media/stunning-purple-backgrounds.jpg");
       background-size: cover;
+      object-fit: fill;
        color: whitesmoke
      }
     }
@@ -17,7 +19,8 @@ body {
        body {
         background-image: url("./components/media/redgalaxy.jpg");
         background-size: cover;
-         color: whitesmoke
+        object-fit: fill;
+        color: whitesmoke
        }
      }
     
@@ -25,7 +28,8 @@ body {
        body {
         background-image: url("./components/media/paintpour2.jpg"); 
         background-size: cover;
-         color: whitesmoke
+        object-fit: fill;
+        color: whitesmoke
          
        }
      }

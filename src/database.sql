@@ -24,7 +24,7 @@ SELECT * FROM user;
 +--------+---------+---------+
 
 
-CREATE TABLE task (id VARCHAR(50), taskDescription VARCHAR(100), completed VARCHAR(20), creationDate DATE, userId BIGINT(20), PRIMARY KEY (id));
+CREATE TABLE task (id BIGINT(20) AUTO_INCREMENT, taskDescription VARCHAR(100), completed VARCHAR(20), creationDate DATE, userId BIGINT(20), PRIMARY KEY (id));
 
 ALTER TABLE task ADD FOREIGN KEY (userId) REFERENCES user(userId);
 
